@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10024FE425C4A8C400DE8C43 /* SDCtextFieldTelefono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10024FE325C4A8C400DE8C43 /* SDCtextFieldTelefono.swift */; };
+		10024FE725C4A8D300DE8C43 /* SDCtextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10024FE625C4A8D200DE8C43 /* SDCtextField.swift */; };
 		106F8D9F25C44FFE00F94497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F8D9E25C44FFE00F94497 /* AppDelegate.swift */; };
 		106F8DA125C44FFE00F94497 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F8DA025C44FFE00F94497 /* SceneDelegate.swift */; };
 		106F8DA325C44FFE00F94497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F8DA225C44FFE00F94497 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10024FE325C4A8C400DE8C43 /* SDCtextFieldTelefono.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCtextFieldTelefono.swift; sourceTree = "<group>"; };
+		10024FE625C4A8D200DE8C43 /* SDCtextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCtextField.swift; sourceTree = "<group>"; };
 		106F8D9B25C44FFE00F94497 /* Formulario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Formulario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		106F8D9E25C44FFE00F94497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		106F8DA025C44FFE00F94497 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		10024FE125C4A7FD00DE8C43 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				10024FE325C4A8C400DE8C43 /* SDCtextFieldTelefono.swift */,
+				10024FE625C4A8D200DE8C43 /* SDCtextField.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,8 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				106F8DA325C44FFE00F94497 /* ViewController.swift in Sources */,
+				10024FE425C4A8C400DE8C43 /* SDCtextFieldTelefono.swift in Sources */,
 				106F8D9F25C44FFE00F94497 /* AppDelegate.swift in Sources */,
 				106F8DA125C44FFE00F94497 /* SceneDelegate.swift in Sources */,
+				10024FE725C4A8D300DE8C43 /* SDCtextField.swift in Sources */,
 				106F8DA925C44FFE00F94497 /* Formulario.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
