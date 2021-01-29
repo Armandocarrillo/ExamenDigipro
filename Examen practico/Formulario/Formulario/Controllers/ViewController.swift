@@ -9,16 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var NombreTextField: UITextField!
+    @IBOutlet weak var nombreTextField: UITextField!
     @IBOutlet weak var apellidoPaternoTextField: UITextField!
     @IBOutlet weak var apellidoMaternoTextField: UITextField!
     @IBOutlet weak var correoElectronicoTextField: UITextField!
-    @IBOutlet weak var TelefonoTextField: UITextField!
+    @IBOutlet weak var telefonoTextField: UITextField!
     @IBOutlet weak var terminarButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.telefonoTextField.delegate = self
+        //self.nombreTextField.delegate = self
+        
+        
     }
 
     @IBAction func terminarTapButton(_ sender: UIButton) {
@@ -30,4 +34,32 @@ class ViewController: UIViewController {
     }
     
 }
+
+extension ViewController: UITextFieldDelegate {
+
+func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    textField.resignFirstResponder()
+    return true
+}
+
+func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+
+    // Verify all the conditions
+    if let sdcTextFieldTelefono = textField as? SDCTextFieldTelefono {
+        return sdcTextFieldTelefono.verifyFields(shouldChangeCharactersIn: range, replacementString: string)
+    } else {
+        return false
+    }
+    
+    
+    
+}
+    
+    
+    
+}
+
+
+
+
 

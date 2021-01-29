@@ -31,7 +31,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xzz-j2-bbH">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xzz-j2-bbH" customClass="SDCTextField" customModule="Formulario" customModuleProvider="target">
                                                         <rect key="frame" x="8" y="36.333333333333329" width="396" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -57,7 +57,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido Paterno" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glh-CL-d8A">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido Paterno" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glh-CL-d8A" customClass="SDCTextField" customModule="Formulario" customModuleProvider="target">
                                                         <rect key="frame" x="8" y="36.333333333333314" width="396" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -83,7 +83,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido Materno" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3jA-sx-z9u">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido Materno" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3jA-sx-z9u" customClass="SDCTextField" customModule="Formulario" customModuleProvider="target">
                                                         <rect key="frame" x="8" y="36.333333333333343" width="396" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -135,7 +135,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono Celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ats-80-ike">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono Celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ats-80-ike" customClass="SDCTextFieldTelefono" customModule="Formulario" customModuleProvider="target">
                                                         <rect key="frame" x="8" y="36.333333333333371" width="396" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
@@ -201,11 +201,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="NombreTextField" destination="Xzz-j2-bbH" id="RMp-2K-5XZ"/>
-                        <outlet property="TelefonoTextField" destination="ats-80-ike" id="RyG-hV-7kX"/>
                         <outlet property="apellidoMaternoTextField" destination="3jA-sx-z9u" id="N8U-7o-213"/>
                         <outlet property="apellidoPaternoTextField" destination="glh-CL-d8A" id="O4Y-PU-ytA"/>
                         <outlet property="correoElectronicoTextField" destination="0Sv-gw-uhN" id="zOW-sv-Ps1"/>
+                        <outlet property="nombreTextField" destination="Xzz-j2-bbH" id="02R-Jc-2py"/>
+                        <outlet property="telefonoTextField" destination="ats-80-ike" id="F7a-QK-6jI"/>
                         <outlet property="terminarButton" destination="syu-57-0vv" id="mvE-JZ-L3n"/>
                     </connections>
                 </viewController>
