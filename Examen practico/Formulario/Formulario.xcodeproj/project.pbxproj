@@ -39,6 +39,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10024FE125C4A7FD00DE8C43 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		106F8D9225C44FFE00F94497 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +65,12 @@
 		106F8D9D25C44FFE00F94497 /* Formulario */ = {
 			isa = PBXGroup;
 			children = (
+				10024FE125C4A7FD00DE8C43 /* Models */,
+				106F8DB625C4500800F94497 /* AppDelegate */,
+				106F8DB925C4501E00F94497 /* CoreData */,
 				106F8DBB25C4505400F94497 /* Resources */,
 				106F8DBA25C4504200F94497 /* View */,
-				106F8DB925C4501E00F94497 /* CoreData */,
-				106F8DB825C4501100F94497 /* ViewController */,
-				106F8DB625C4500800F94497 /* AppDelegate */,
+				106F8DB825C4501100F94497 /* Controllers */,
 			);
 			path = Formulario;
 			sourceTree = "<group>";
@@ -76,12 +84,12 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		106F8DB825C4501100F94497 /* ViewController */ = {
+		106F8DB825C4501100F94497 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				106F8DA225C44FFE00F94497 /* ViewController.swift */,
 			);
-			path = ViewController;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		106F8DB925C4501E00F94497 /* CoreData */ = {
@@ -332,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMTQUL7LT8;
-				INFOPLIST_FILE = Formulario/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Formulario/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMTQUL7LT8;
-				INFOPLIST_FILE = Formulario/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Formulario/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
