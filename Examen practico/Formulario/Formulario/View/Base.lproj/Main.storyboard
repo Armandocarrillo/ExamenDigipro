@@ -205,6 +205,7 @@
                         <outlet property="apellidoPaternoTextField" destination="glh-CL-d8A" id="O4Y-PU-ytA"/>
                         <outlet property="correoElectronicoTextField" destination="0Sv-gw-uhN" id="zOW-sv-Ps1"/>
                         <outlet property="nombreTextField" destination="Xzz-j2-bbH" id="02R-Jc-2py"/>
+                        <outlet property="scrollView" destination="dnX-cp-clZ" id="jIf-Ma-MIr"/>
                         <outlet property="telefonoTextField" destination="ats-80-ike" id="F7a-QK-6jI"/>
                         <outlet property="terminarButton" destination="syu-57-0vv" id="mvE-JZ-L3n"/>
                     </connections>

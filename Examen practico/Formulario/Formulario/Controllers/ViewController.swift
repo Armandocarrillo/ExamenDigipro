@@ -15,15 +15,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var correoElectronicoTextField: UITextField!
     @IBOutlet weak var telefonoTextField: UITextField!
     @IBOutlet weak var terminarButton: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.telefonoTextField.delegate = self
         //self.nombreTextField.delegate = self
+       
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+                
+                          
+                view.addGestureRecognizer(tap)
+            }
+         
+            
         
-    }
+
+    
 
     @IBAction func terminarTapButton(_ sender: UIButton) {
         
@@ -58,6 +68,19 @@ func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange
     
     
 }
+
+extension ViewController{
+    
+    
+    @objc func dismissKeyboard() {
+        //Las vistas y toda la jerarquía renuncia a responder, para esconder el teclado
+        view.endEditing(true)
+    }
+
+    
+}
+
+
 
 
 
