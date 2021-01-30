@@ -1,6 +1,7 @@
 # ExamenDigipro
 
 2. Explica en tus propias palabras y con base a tu experiencia, el proceso que utilizas para consumir servicios de tipo REST. En tu respuesta puedes explicar desde librerías de terceros hasta procesos.
+
         1. Instalar Alamofire.
         2. Realizar capa de red.
           1. Obtener URL
