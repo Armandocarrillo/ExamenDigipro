@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var telefonoTextField: UITextField!
     @IBOutlet weak var terminarButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    
+    private let manager = CoreDataManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +45,25 @@ class ViewController: UIViewController {
             self.terminarButton.transform = CGAffineTransform(scaleX: 3.0, y: 3.0)
             self.terminarButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }
+        
+        let alert = UIAlertController(title: "Se agrego nuevo elemento", message: " ", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        
+        let nameText: String = nombreTextField.text!
+        let lastnamePaternoText: String = apellidoPaternoTextField.text!
+        let lastnameMaternoText: String = apellidoMaternoTextField.text!
+        let emailText: String = correoElectronicoTextField.text!
+        let phoneNumberText : String = telefonoTextField.text!
+        
+        manager.createUser(name: nameText, lastNamePaterno: lastnamePaternoText ,lastNameMaterno: lastnameMaternoText, email: emailText, phoneNumber: phoneNumberText) { [weak self] in
+
+        
+        
+        }
+        alert.addAction(okAction)
+        
+        present(alert, animated: true)
+        
     }
     
 }
@@ -79,6 +102,8 @@ extension ViewController{
 
     
 }
+
+
 
 
 
