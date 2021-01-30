@@ -1,6 +1,13 @@
 # ExamenDigipro
 
 2. Explica en tus propias palabras y con base a tu experiencia, el proceso que utilizas para consumir servicios de tipo REST. En tu respuesta puedes explicar desde librerías de terceros hasta procesos.
+        1. Instalar Alamofire.
+        2. Realizar capa de red.
+          1. Obtener URL
+          2. Realizar el try-catch para obtener errores.
+        3. Guardar los datos en struct.
+          
+        
 
 3. Explica en que condiciones o en que caso práctico utilizarías un XIB, Storyboard, o elementos creados desde programación y describe el porque de cada uno.
 
